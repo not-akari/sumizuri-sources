@@ -1,0 +1,106 @@
+{
+  "name": "Sumizuri official",
+  "sources": [
+    {
+      "id": "jellyfin",
+      "name": "Jellyfin",
+      "version": "1.0.0",
+      "medium": "anime",
+      "language": "en",
+      "contentRating": "safe",
+      "website": "https://jellyfin.org",
+      "iconUrl": "https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/android/mobile/app/mipmap-xxxhdpi/ic_launcher.png",
+      "description": "Shows・Movies\n\nYour own Jellyfin server.",
+      "capabilities": [
+        "videos",
+        "genres"
+      ],
+      "sha256": "f7071e8c1fc2bcb967bc649e679ce1f21da79109e4824055666a86bd9d3bc421",
+      "settingsSchema": [
+        {
+          "type": "text",
+          "key": "server",
+          "label": "Server address",
+          "placeholder": "http://192.168.1.20:8096"
+        },
+        {
+          "type": "text",
+          "key": "username",
+          "label": "User name"
+        },
+        {
+          "type": "text",
+          "key": "password",
+          "label": "Password",
+          "secure": true
+        }
+      ]
+    },
+    {
+      "id": "kavita",
+      "name": "Kavita",
+      "version": "1.0.0",
+      "medium": "both",
+      "language": "en",
+      "contentRating": "safe",
+      "website": "https://www.kavitareader.com",
+      "iconUrl": "https://raw.githubusercontent.com/Kareadita/Kavita/develop/UI/Web/src/assets/icons/android-chrome-192x192.png",
+      "description": "Comics・Manga・Books\n\nYour own Kavita server.",
+      "capabilities": [
+        "genres"
+      ],
+      "sha256": "d6b2586c049dba7214fdc5137c1526f7e0ab6fce172f556826196dc6b836ac70",
+      "imageHeaders": {
+        "x-api-key": "{{apiKey}}"
+      },
+      "settingsSchema": [
+        {
+          "type": "text",
+          "key": "server",
+          "label": "Server address",
+          "placeholder": "http://192.168.1.20:5000"
+        },
+        {
+          "type": "text",
+          "key": "apiKey",
+          "label": "API key",
+          "secure": true,
+          "placeholder": "Kavita, Settings, Account, API key"
+        }
+      ]
+    },
+    {
+      "id": "komga",
+      "name": "Komga",
+      "version": "1.0.0",
+      "medium": "both",
+      "language": "en",
+      "contentRating": "safe",
+      "website": "https://komga.org",
+      "iconUrl": "https://raw.githubusercontent.com/gotson/komga/master/.github/readme-images/app-icon.png",
+      "description": "Comics・Manga・Books\n\nYour own Komga server.",
+      "capabilities": [
+        "genres"
+      ],
+      "sha256": "509d6120caaaab6fb4dbe7da75f791d8f979f86bd68cfbc8d5370b56de81234e",
+      "imageHeaders": {
+        "X-API-Key": "{{apiKey}}"
+      },
+      "settingsSchema": [
+        {
+          "type": "text",
+          "key": "server",
+          "label": "Server address",
+          "placeholder": "http://192.168.1.20:25600"
+        },
+        {
+          "type": "text",
+          "key": "apiKey",
+          "label": "API key",
+          "secure": true,
+          "placeholder": "Komga, Account settings, API keys"
+        }
+      ]
+    }
+  ]
+}
